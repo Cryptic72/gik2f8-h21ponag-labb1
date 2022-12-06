@@ -26,7 +26,7 @@ function renderBookList(bookList) {
 
   const root = document.getElementById('root');
 
-  existingInfoBox && bookList.length == 10 && existingInfoBox.remove();
+  existingInfoBox && bookList.length == 10 && existingInfoBox.remove(); // This is so that if the user empties the search field the info box goes away.
   existingElement && root.removeChild(existingElement);
   bookList.length > 0 && searchField.value && root.insertAdjacentHTML('beforeend', BookList(bookList));
 

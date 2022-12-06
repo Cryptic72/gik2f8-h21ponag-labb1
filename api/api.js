@@ -9,6 +9,8 @@ async function getAll() {
   return result;
 }
 
+// Added this to get details for specific book.
+
 async function getDetails(id) {
     const result = await fetch(url2 + id)
       .then((result) => result.json())

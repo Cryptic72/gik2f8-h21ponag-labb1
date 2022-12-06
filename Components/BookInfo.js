@@ -11,3 +11,5 @@ const BookInfo = (details, x, y) =>  {
 
     return html;
 }
+
+// When a new div element is created the top and left are set to the retrieved mouse coordinate values. Additionally the details from the URL are placed into the div.
